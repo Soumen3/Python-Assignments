@@ -3,7 +3,7 @@
 
 def reverse_list(lst):
 	rev = []
-	for i in range(-1, -len(lst), -1):
+	for i in range(-1, -(len(lst)+1), -1):
 		rev.append(lst[i])
 	return rev
 
