@@ -12,15 +12,13 @@
 string = input("Enter a string: ")
 print(string[::-1])
 
-# II. 2.checks whether it is a palindrome.
-string = input("Enter a string: ")
+# II. 2.checks whether it is a palindrome.\
 if string == string[::-1]:
 	print("Palindrome")
 else:
 	print("Not a palindrome")
 
 # III. 3.checks whether it ends with a specific substring.
-string = input("Enter a string: ")
 substring = input("Enter a substring: ")
 if string.endswith(substring):
 	print("Yes")
@@ -28,7 +26,6 @@ else:
 	print("No")
 
 # IV. 4.capitalize the first letter of each word in a string
-string = input("Enter a string: ")
 words = string.split()
 words = [word.capitalize() for word in words]
 print(" ".join(words))
@@ -42,13 +39,11 @@ else:
 	print("Not an anagram")
 
 # VI. 6.remove vowels from string
-string = input("Enter a string: ")
 vowels = "aeiouAEIOU"
 string = "".join([char for char in string if char not in vowels])
 print(string)
 
 # VII. 7.find length of the longest word in a sentence
-string = input("Enter a string: ")
 words = string.split()
 lengths = [len(word) for word in words]
 print(max(lengths))
